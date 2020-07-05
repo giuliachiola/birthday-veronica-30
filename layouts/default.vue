@@ -28,10 +28,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  font-weight: 300; // light
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;

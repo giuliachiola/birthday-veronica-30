@@ -45,7 +45,7 @@ export default {
     },
 
     diff() {
-      return moment.duration(this.birthday.diff(this.now))
+      return moment.duration(this.now.diff(this.birthday))
     },
 
     seconds() {
@@ -90,23 +90,30 @@ export default {
 }
 </script>
 
-<style>
-.c-countdown {
-  color: white;
-  display: flex;
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
-  /* &:not:last-child {
-    border-right: 1px solid white;
+$co_countdown-text: white;
+
+.c-countdown {
+  color: $co_countdown-text;
+  display: flex;
+}
+
+.c-countdown__block {
+  &:not(:last-child) {
+    border-right: 1px solid rgba($co_countdown-text, 0.2);
     padding-right: 20px;
     margin-right: 20px;
-  } */
+  }
 }
 
 .c-countdown__digit {
+  font-family: 'Anonymous Pro', monospace;
   font-size: 7em;
 }
 
 .c-countdown__text {
-  font-size: 3em;
+  font-size: 1em;
 }
 </style>
