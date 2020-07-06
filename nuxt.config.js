@@ -65,4 +65,12 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  render: {
+    // working:
+    injectScripts: process.env.NODE_ENV === 'development',
+
+    // HMR not working:
+    // injectScripts: false,
+  },
+  loading: true,
 }

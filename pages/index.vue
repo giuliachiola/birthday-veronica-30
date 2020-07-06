@@ -22,6 +22,8 @@
 import Countdown from '../components/Countdown.vue'
 
 export default {
+  name: 'Index',
+
   components: {
     Countdown,
   },
@@ -41,47 +43,6 @@ export default {
     margin: 40px 0;
     font-weight: 300;
     font-size: 2em;
-  }
-}
-
-$co_button: white;
-
-.c-button--animation {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($co_button, 0.5);
-    border-radius: 40px;
-    z-index: -2;
-  }
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    background-color: rgba($co_button, 0.7);
-    border-radius: 40px;
-    z-index: -1;
-    animation: variableWidth 2s ease-in-out infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes variableWidth {
-    0% {
-      width: 12%;
-    }
-    100% {
-      width: 100%;
-    }
   }
 }
 </style>

@@ -2,8 +2,8 @@
   <div class="tpl tpl-cats">
     <!-- gif -->
     <gif-responsive :src="'https://giphy.com/embed/CF93EZqOxjdHG'" />
-    <nuxt-link to="/watermelons" class="c-button"
-      >Ok, basta angurie! →</nuxt-link
+    <nuxt-link to="/watermelons" class="c-button c-button--animation"
+      >Preso! →</nuxt-link
     >
   </div>
 </template>
@@ -16,6 +16,8 @@
 import GifResponsive from '../components/GifResponsive.vue'
 
 export default {
+  name: 'Cats2',
+
   components: {
     GifResponsive,
   },

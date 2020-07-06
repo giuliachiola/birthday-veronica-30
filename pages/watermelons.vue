@@ -1,11 +1,15 @@
 <template>
   <div class="tpl tpl--watermelons">
-    <nuxt-link to="/cats2" class="c-button">Ok, basta angurie! →</nuxt-link>
+    <nuxt-link to="/cats2" class="c-button c-button--animation"
+      >Ok, basta angurie! →</nuxt-link
+    >
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Watermelons',
+}
 </script>
 
 <style lang="scss">
