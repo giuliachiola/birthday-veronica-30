@@ -1,10 +1,12 @@
 <template>
   <div class="tpl tpl-cats">
-    <!-- gif -->
-    <gif-responsive :src="'https://giphy.com/embed/CF93EZqOxjdHG'" />
-    <nuxt-link to="/watermelons" class="c-button c-button--animation"
-      >Preso! →</nuxt-link
-    >
+    <div class="l-wrapper">
+      <!-- gif -->
+      <gif-responsive :src="'https://giphy.com/embed/CF93EZqOxjdHG'" />
+      <nuxt-link to="/sea" class="c-button c-button--animation"
+        >e per sorprenderti! →</nuxt-link
+      >
+    </div>
   </div>
 </template>
 
@@ -13,6 +15,7 @@
 // 'https://giphy.com/embed/CF93EZqOxjdHG',
 // 'https://giphy.com/embed/40Fpxgn6Yq640',
 // 'https://giphy.com/embed/a51kJ5I6YfejC',
+// 'https://giphy.com/embed/qX7Q4wxpRVo88',
 import GifResponsive from '../components/GifResponsive.vue'
 
 export default {
