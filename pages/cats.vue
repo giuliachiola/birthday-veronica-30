@@ -1,5 +1,5 @@
 <template>
-  <div class="tpl tpl-cats">
+  <div class="tpl tpl--gradient-movement tpl-cats">
     <div class="l-wrapper">
       <!-- gif -->
       <gif-responsive :src="'https://giphy.com/embed/12ELmx0C4EFKcE'" />

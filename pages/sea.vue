@@ -1,5 +1,5 @@
 <template>
-  <div class="tpl tpl--sea">
+  <div class="tpl tpl--gradient-movement tpl--sea">
     <nuxt-link to="/happy" class="c-button c-button--animation"
       >Quindi fluttuando come l'algapalla... →</nuxt-link
     >

@@ -1,5 +1,5 @@
 <template>
-  <div class="tpl tpl--homepage">
+  <div class="tpl tpl--gradient-movement tpl--homepage">
     <div class="c-intro">
       <h2>
         Alla fine siamo soltanto

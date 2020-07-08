@@ -1,4 +1,4 @@
-@keyframes gradient {
+@keyframes gradientMovement {
   0% {
     background-position: 0% 50%;
   }
@@ -17,8 +17,11 @@
   align-items: center;
   height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.tpl--gradient-movement {
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradientMovement 15s ease infinite;
 }
 
 .l-wrapper {

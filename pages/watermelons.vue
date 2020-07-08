@@ -1,5 +1,5 @@
 <template>
-  <div class="tpl tpl--watermelons">
+  <div class="tpl tpl--gradient-movement tpl--watermelons">
     <nuxt-link to="/cats2" class="c-button c-button--animation"
       >Augurie! →</nuxt-link
     >
