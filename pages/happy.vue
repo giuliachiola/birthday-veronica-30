@@ -46,7 +46,7 @@ export default {
   max-width: 500px;
   margin: 0 auto;
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (min-width: 1200px) {
     max-width: 800px;
   }
 }
