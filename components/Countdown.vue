@@ -118,7 +118,15 @@ $co_countdown-text: white;
 
 .c-countdown__digit {
   font-family: 'Anonymous Pro', monospace;
-  font-size: 7em;
+  font-size: 2em;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 3em;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 7em;
+  }
 }
 
 .c-countdown__text {

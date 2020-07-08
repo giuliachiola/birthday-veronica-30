@@ -43,8 +43,12 @@ export default {
 }
 
 .s-gif-wrapper {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 800px;
+  }
 }
 
 @keyframes radialBackground {
