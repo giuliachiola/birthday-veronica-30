@@ -6,8 +6,10 @@
         <strong>30</strong>
         anni!! 🎉 🍰
       </h1>
-      <!-- gif -->
-      <gif-responsive :src="'https://giphy.com/embed/qX7Q4wxpRVo88'" />
+      <div class="s-gif-wrapper">
+        <!-- gif -->
+        <gif-responsive :src="'https://giphy.com/embed/qX7Q4wxpRVo88'" />
+      </div>
     </div>
   </div>
 </template>
@@ -32,12 +34,17 @@ export default {
 
   h1 {
     color: white;
-    margin: 40px 0;
+    margin: 20px 0;
     font-weight: 300;
     font-size: 3em;
     text-align: center;
     text-shadow: 3px -2px 11px #161616; // preserve legibility
   }
+}
+
+.s-gif-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 @keyframes radialBackground {
