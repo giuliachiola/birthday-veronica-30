@@ -1,7 +1,14 @@
 <template>
-  <div class="tpl tpl--gradient-movement tpl--sea">
-    <nuxt-link to="/happy" class="c-button c-button--animation"
+  <div class="tpl tpl--gradient-horizontal tpl--sea">
+    <!-- <nuxt-link to="/happy" class="c-button c-button--animation"
       >Quindi fluttuando come l'algapalla... →</nuxt-link
+    > -->
+    <a href="/happy" class="c-button c-button--animation"
+      >Quindi fluttuando come un'algapalla... →</a
+    >
+
+    <a class="s-animation-credits" href="https://codepen.io/shorelle/pen/NvpRLM"
+      >Animation credits</a
     >
   </div>
 </template>
@@ -12,7 +19,7 @@ export default {
     const recaptchaScript = document.createElement('script')
     recaptchaScript.setAttribute(
       'src',
-      'https://codepen.io/giuliachiola/pen/oNbqNOr.js' // forked!
+      'https://codepen.io/shorelle/pen/NvpRLM.js' // forked!
     )
     document.head.appendChild(recaptchaScript)
   },
@@ -24,6 +31,14 @@ export default {
   background: linear-gradient(-45deg, #131bab, #3c92e7, #24adde, #4a40d4);
   background-size: 200% 200%;
   animation: gradient 5s ease infinite;
+}
+
+.s-animation-credits {
+  font-size: 11px;
+  color: lightgray;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 $parrot-size: 60px;

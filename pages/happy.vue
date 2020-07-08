@@ -2,7 +2,8 @@
   <div class="tpl tpl--happy">
     <div class="l-wrapper">
       <h1>
-        ...ti auguriamo tantissimi <strong>auguri</strong> <br />per questi 30
+        ...ti facciamo tantissimi <strong>auguri</strong> <br />per questi
+        <strong>30</strong>
         anni!! 🎉 🍰
       </h1>
       <!-- gif -->
@@ -27,7 +28,7 @@ export default {
 .tpl--happy {
   background: radial-gradient(red 5%, orange, yellow, lime, blue, hotpink);
   background-position: center;
-  animation: radialBackground 6s ease infinite;
+  animation: radialBackground 3s ease-in-out infinite;
 
   h1 {
     color: white;

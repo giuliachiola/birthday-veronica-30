@@ -1,6 +1,10 @@
 <template id="countdown-template">
   <div class="c-countdown">
     <div class="c-countdown__block">
+      <div class="c-countdown__digit">{{ years | two_digits }}</div>
+      <div class="c-countdown__text">anni</div>
+    </div>
+    <div class="c-countdown__block">
       <div class="c-countdown__digit">{{ months | two_digits }}</div>
       <div class="c-countdown__text">mesi</div>
     </div>
@@ -70,6 +74,10 @@ export default {
 
     months() {
       return this.diff.months()
+    },
+
+    years() {
+      return this.diff.years()
     },
   },
 

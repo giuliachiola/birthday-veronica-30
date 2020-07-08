@@ -1,21 +1,19 @@
 <template>
-  <div class="tpl tpl--gradient-movement tpl--cats">
+  <div class="tpl tpl--gradient-horizontal tpl--cats">
     <div class="l-wrapper">
       <!-- gif -->
       <gif-responsive :src="'https://giphy.com/embed/CF93EZqOxjdHG'" />
-      <nuxt-link to="/sea" class="c-button c-button--animation"
+      <!-- <nuxt-link to="/sea" class="c-button c-button--animation"
         >e per sorprenderti! →</nuxt-link
+      > -->
+      <a href="/sea" class="c-button c-button--animation"
+        >e per sorprenderti! →</a
       >
     </div>
   </div>
 </template>
 
 <script>
-// 'https://giphy.com/embed/12ELmx0C4EFKcE'
-// 'https://giphy.com/embed/CF93EZqOxjdHG',
-// 'https://giphy.com/embed/40Fpxgn6Yq640',
-// 'https://giphy.com/embed/a51kJ5I6YfejC',
-// 'https://giphy.com/embed/qX7Q4wxpRVo88',
 import GifResponsive from '../components/GifResponsive.vue'
 
 export default {
