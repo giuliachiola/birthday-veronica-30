@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 .tpl--cats {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(to left, #3a1c71, #d76d77, #ffaf7b);
 }
 
 .tpl-cats__grid {

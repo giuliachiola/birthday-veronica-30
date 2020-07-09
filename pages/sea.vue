@@ -28,7 +28,11 @@ export default {
 
 <style lang="scss">
 .tpl--sea {
-  background: linear-gradient(-45deg, #131bab, #3c92e7, #24adde, #4a40d4);
+  background: linear-gradient(
+    to bottom,
+    rgba(1, 96, 186, 1) 5.736111111111111%,
+    rgba(0, 0, 0, 1) 96.29166666666666%
+  );
   background-size: 200% 200%;
   animation: gradient 5s ease infinite;
 }
