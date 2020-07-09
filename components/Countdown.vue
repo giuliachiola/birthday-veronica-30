@@ -98,7 +98,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
 $co_countdown-text: white;
@@ -106,13 +106,20 @@ $co_countdown-text: white;
 .c-countdown {
   color: $co_countdown-text;
   display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: $media-tablet) {
+    flex-direction: row;
+  }
 }
 
 .c-countdown__block {
-  &:not(:last-child) {
-    border-right: 1px solid rgba($co_countdown-text, 0.2);
-    padding-right: 20px;
-    margin-right: 20px;
+  @media only screen and (min-width: $media-tablet) {
+    &:not(:last-child) {
+      border-right: 1px solid rgba($co_countdown-text, 0.2);
+      padding-right: 20px;
+      margin-right: 20px;
+    }
   }
 }
 
@@ -120,11 +127,11 @@ $co_countdown-text: white;
   font-family: 'Anonymous Pro', monospace;
   font-size: 2em;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $media-tablet) {
     font-size: 3em;
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: $media-wide) {
     font-size: 7em;
   }
 }

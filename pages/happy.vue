@@ -28,17 +28,35 @@ export default {
 
 <style lang="scss" scoped>
 .tpl--happy {
-  background: radial-gradient(red 5%, orange, yellow, lime, blue, hotpink);
+  background: linear-gradient(
+    45deg,
+    red 10%,
+    orange,
+    yellow,
+    lime,
+    blue,
+    hotpink,
+    blue,
+    lime,
+    yellow,
+    orange,
+    red
+  );
   background-position: center;
-  animation: radialBackground 3s ease-in-out infinite;
+  background-size: 200% 200%;
+  animation: gradientVertical 3s ease-in-out infinite;
 
   h1 {
     color: white;
     margin: 20px 0;
-    font-weight: 300;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
-    text-shadow: 3px -2px 11px #161616; // preserve legibility
+    text-shadow: 4px -4px 20px #3b3b3b; // preserve legibility
+    font-weight: 300;
+
+    @media only screen and (min-width: $media-tablet) {
+      font-size: 3em;
+    }
   }
 }
 
@@ -46,26 +64,8 @@ export default {
   max-width: 500px;
   margin: 0 auto;
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: $media-wide) {
     max-width: 800px;
-  }
-}
-
-@keyframes radialBackground {
-  0% {
-    background-size: 100% 100%;
-  }
-  20% {
-    background-size: 200% 200%;
-  }
-  50% {
-    background-size: 400% 400%;
-  }
-  70% {
-    background-size: 200% 200%;
-  }
-  100% {
-    background-size: 100% 100%;
   }
 }
 </style>

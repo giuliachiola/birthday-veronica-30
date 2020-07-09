@@ -27,14 +27,14 @@ export default {
 </script>
 
 <style lang="scss">
+// IMPORTANT: do not add 'scoped' in this <style> attribute because .parrot items are not in this scope :)
+
 .tpl--sea {
-  background: linear-gradient(
+  background-image: linear-gradient(
     to bottom,
     rgba(1, 96, 186, 1) 5.736111111111111%,
     rgba(0, 0, 0, 1) 96.29166666666666%
   );
-  background-size: 200% 200%;
-  animation: gradient 5s ease infinite;
 }
 
 .s-animation-credits {

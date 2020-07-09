@@ -1,5 +1,5 @@
 <template>
-  <div class="tpl tpl--gradient-horizontal tpl--cats">
+  <div class="tpl tpl--gradient-horizontal tpl--cats2">
     <div class="l-wrapper">
       <!-- gif -->
       <gif-responsive :src="'https://giphy.com/embed/CF93EZqOxjdHG'" />
@@ -26,14 +26,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tpl--cats {
-  background: linear-gradient(to right, #4568dc, #b06ab3);
-}
-
-.tpl-cats__grid {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
+.tpl--cats2 {
+  background-image: linear-gradient(
+    to right,
+    #4568dc,
+    #b06ab3,
+    #4568dc,
+    #b06ab3
+  );
 }
 </style>

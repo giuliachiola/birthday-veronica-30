@@ -32,7 +32,7 @@ export default {
 
 <style scoped lang="scss">
 .tpl--homepage {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-image: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
 
 .c-intro {
@@ -42,7 +42,11 @@ export default {
     color: white;
     margin: 40px 0;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.5em;
+
+    @media only screen and (min-width: $media-tablet) {
+      font-size: 2em;
+    }
   }
 }
 </style>
