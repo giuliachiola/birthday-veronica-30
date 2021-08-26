@@ -1,24 +1,45 @@
-# auguri-veronica-30
+# Birthday Veronica 30
 
-## Build Setup
+| \                | \                                                                                                                                                                   |
+|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pipeline         | [![Netlify Status](https://api.netlify.com/api/v1/badges/efb3e9f1-0e1a-4a00-ab19-ae4327b5184a/deploy-status)](https://app.netlify.com/sites/auguri-vero-30/deploys) |
+| Deploy preview   | https://auguri-vero-30.netlify.app/                                                                                                                                 |
+| Project typology | Personal                                                                                                                                                            |
 
-```bash
+![project preview](docs/project-preview.png)
+
+## 🔥 Tech stack
+
+| Purpose               | Technology   |
+|:----------------------|:-------------|
+| Templating            | VueJS        |
+| Styling               | SCSS + BEMIT |
+| Documentation         | Markdown     |
+| Server Side Rendering | NuxtJS       |
+
+## 🌊 Run development mode
+
+```shell
 # install dependencies
-$ npm install
+npm i
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+# serve with hot reload at localhost:8080
+npm run dev
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## 🧳 Build setup
 
-## Netlify
+```shell
+# build for production and launch server
+npm run build
+npm run start
 
-Deploy branch: `master`
+# generate static project
+npm run generate
+```
+
+### 🌿 Branches
+
+| Branch name | Use        |
+|:------------|:-----------|
+| `main`      | production |
