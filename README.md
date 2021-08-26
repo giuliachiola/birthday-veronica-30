@@ -2,7 +2,7 @@
 
 | \                | \                                                                                                                                                                   |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Pipeline         | [![Netlify Status](https://api.netlify.com/api/v1/badges/efb3e9f1-0e1a-4a00-ab19-ae4327b5184a/deploy-status)](https://app.netlify.com/sites/auguri-vero-30/deploys) |
+| Deploy status	         | [![Netlify Status](https://api.netlify.com/api/v1/badges/efb3e9f1-0e1a-4a00-ab19-ae4327b5184a/deploy-status)](https://app.netlify.com/sites/auguri-vero-30/deploys) |
 | Deploy preview   | https://auguri-vero-30.netlify.app/                                                                                                                                 |
 | Project typology | Personal                                                                                                                                                            |
 
